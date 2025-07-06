@@ -1,0 +1,70 @@
+# 博客基本信息
+title: "思源的哲学与技术思考"
+description: "探索哲学与技术的交汇点，记录个人成长与思考的轨迹"
+author: "思源"
+email: "your-email@example.com"
+url: "https://yourusername.github.io"
+baseurl: "/myrepo"
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 分页设置
+paginate: 10
+paginate_path: "/page:num/"
+
+# 日期格式
+date_format: "%Y年%m月%d日"
+
+# 导航菜单
+navigation:
+  - title: "首页"
+    url: /
+  - title: "文章"
+    url: /posts/
+  - title: "分类"
+    url: /categories/
+  - title: "关于"
+    url: /about/
+
+# 分类设置
+category_list:
+  - name: "哲学思考"
+    description: "对人生、社会、存在的深度思考"
+  - name: "技术探索"
+    description: "编程、算法、技术研究心得"
+  - name: "个人成长"
+    description: "习惯培养、自我提升、学习方法"
+  - name: "社会观察"
+    description: "时事评论、社会现象分析"
+
+# 社交链接
+social:
+  github: "yourusername"
+  email: "your-email@example.com"
+
+# 构建排除
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - 每日记录.txt
+
+# 时区
+timezone: Asia/Shanghai
+
+# 字符编码
+encoding: utf-8
+
+# 语言
+lang: zh-CN 

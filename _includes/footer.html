@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-col footer-col-1">
+        <h3>联系方式</h3>
+        <ul class="contact-list">
+          {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% endif %}
+          {% if site.social.github %}
+            <li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>关于博客</h3>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <h3>最新文章</h3>
+        <ul class="post-list">
+          {% for post in site.posts limit:3 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. 
+      基于 <a href="https://jekyllrb.com/">Jekyll</a> 构建，
+      由 <a href="https://pages.github.com/">GitHub Pages</a> 托管。</p>
+    </div>
+  </div>
+</footer> 
