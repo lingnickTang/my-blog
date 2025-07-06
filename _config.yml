@@ -19,6 +19,9 @@ plugins:
 paginate: 10
 paginate_path: "/page:num/"
 
+# URL格式设置
+permalink: /:year/:month/:day/:title/
+
 # 日期格式
 date_format: "%Y年%m月%d日"
 
