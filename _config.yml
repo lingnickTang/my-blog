@@ -9,11 +9,18 @@ baseurl: "/myrepo"
 # 构建设置
 markdown: kramdown
 highlighter: rouge
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+
+# GitHub Pages 兼容性设置
+github: [metadata]
+safe: true
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # 分页设置
 paginate: 10

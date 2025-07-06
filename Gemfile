@@ -1,13 +1,10 @@
 source "https://rubygems.org"
 
-# Jekyll版本
-gem "jekyll", "~> 4.3.0"
+# GitHub Pages支持（包含Jekyll和所有必需的gems）
+gem "github-pages", group: :jekyll_plugins
 
 # 默认主题
 gem "minima", "~> 2.5"
-
-# GitHub Pages支持
-gem "github-pages", group: :jekyll_plugins
 
 # 插件
 group :jekyll_plugins do
